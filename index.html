@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4keiyy | Global Intelligence</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Share+Tech+Mono&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{background:#080608;color:#eee;font-family:'Share Tech Mono',monospace;overflow-x:hidden}
+#matrix{position:fixed;inset:0;width:100%;height:100%;z-index:-1;opacity:.24;pointer-events:none}
+nav{position:sticky;top:0;z-index:20;background:#100a0c;padding:17px 14px;display:flex;gap:22px;align-items:center;overflow-x:auto;border-bottom:1px solid #68202d}
+nav strong{font-family:Orbitron;color:#ff4059;font-size:17px}
+nav a{color:#ddd;text-decoration:none;font-size:11px;letter-spacing:2px;white-space:nowrap}
+.hero{margin:45px 17px 35px;padding:45px 20px;text-align:center;background:#140c0ff2;border:1px solid #59232e;border-radius:24px;box-shadow:0 0 35px #a0002020}
+.logo{font-size:65px;margin-bottom:22px;filter:drop-shadow(0 0 15px red)}
+.status{color:#ff5369;letter-spacing:3px;font-size:12px;margin-bottom:30px}
+.status span{color:#21dc8b}
+h1{font-family:Orbitron;font-size:clamp(35px,9vw,60px);text-shadow:0 0 20px red;margin-bottom:20px}
+.hero p{color:#bbb;line-height:1.9}
+.btn{display:inline-block;margin-top:25px;padding:14px 21px;background:#b92339;border:1px solid #ff5268;border-radius:10px;color:white;text-decoration:none}
+section{padding:40px 20px;text-align:center}
+.tag{color:#ff5268;letter-spacing:4px;font-size:12px;margin-bottom:18px}
+h2{font-family:Orbitron;font-size:23px;margin-bottom:20px}
+.intro{color:#aaa;line-height:1.9;max-width:600px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;margin-top:25px}
+.card{background:#160e12;border:1px solid #54202a;border-radius:15px;padding:22px;text-align:left}
+.card h3{color:#ff6175;margin-bottom:12px}
+.card p{color:#aaa;line-height:1.8;font-size:13px}
+.ops-title{text-align:center;font-family:Orbitron;font-size:24px;margin:12px 18px}
+.ops-intro{text-align:center;color:#aaa;line-height:1.8;margin:15px 25px 30px}
+.ops-card{margin:22px 16px;background:#100d10f7;border:1px solid #57212c;border-radius:20px;overflow:hidden}
+.ops-head{padding:24px 18px;font-family:Orbitron;font-size:13px;border-bottom:1px solid #33242a}
+.dot{color:#ff344f;margin-right:9px;text-shadow:0 0 12px red}
+.ops-body{padding:20px}
+.frame{display:block;width:100%;height:390px;border:0;background:#080808}
+.cyber{height:440px}
+.flight{height:460px}
+.weather{height:420px}
+.ops-foot{padding:17px 20px;border-top:1px solid #30242a}
+.link{display:inline-block;color:#ff8797;border:1px solid #63303b;padding:12px 16px;border-radius:10px;text-decoration:none;font-size:13px}
+.data{background:#1a1519;border:1px solid #3c3036;border-radius:12px;padding:16px;margin-bottom:12px;text-align:left}
+.data h3{font-size:15px;line-height:1.6}
+.data p{font-size:12px;color:#aaa;margin-top:8px}
+.big{font-family:Orbitron;font-size:30px;color:#ff5268;margin:12px 0}
+.small{color:#999;font-size:12px;line-height:1.8}
+footer{text-align:center;padding:30px;color:#888;border-top:1px solid #54202a;line-height:2}
+footer strong{font-family:Orbitron;color:#ff5268}
+@media(max-width:400px){
+.ops-head{font-size:11px}
+.frame{height:330px}
+.cyber{height:390px}
+}
+</style>
+</head>
+
+<body>
+
+<canvas id="matrix"></canvas>
+
+<nav>
+<strong>4keiyy</strong>
+<a href="#home">HOME</a>
+<a href="#about">ABOUT ME</a>
+<a href="#tools">TOOLS</a>
+<a href="#operations">THREAT RADAR</a>
+</nav>
+
+<div class="hero" id="home">
+<div class="logo">☠</div>
+<div class="status"><span>●</span> SYSTEM STATUS: ONLINE</div>
+<h1>4keiyy</h1>
+<p>Cybersecurity Awareness, Digital Intelligence and Global Monitoring.</p>
+<a href="#operations" class="btn">ENTER OPERATIONS →</a>
+</div>
+
+<section id="about">
+<div class="tag">01 / ABOUT ME</div>
+<h2>Behind The System</h2>
+<p class="intro">Welcome to 4keiyy. A digital space dedicated to cybersecurity awareness, ethical learning, technology exploration and global intelligence.</p>
+</section>
+
+<section id="tools">
+<div class="tag">02 / DIGITAL TOOLS</div>
+<h2>Explore The Arsenal</h2>
+<div class="grid">
+<div class="card"><h3>🛡 Cyber Shield</h3><p>Digital protection and cybersecurity awareness.</p></div>
+<div class="card"><h3>🔍 Digital Research</h3><p>Responsible open-source research and verification.</p></div>
+<div class="card"><h3>💻 Terminal Lab</h3><p>Linux, programming and safe experiments.</p></div>
+<div class="card"><h3>🌐 Network Awareness</h3><p>Learn about networks and internet security.</p></div>
+</div>
+</section>
+
+<div id="operations">
+<div class="tag" style="text-align:center">LIVE OPERATIONS</div>
+<h2 class="ops-title">Signals From The Digital World</h2>
+<p class="ops-intro">Six live views of cyber threats, aircraft, earthquakes, weather and space.</p>
+
+<!-- CYBER THREAT -->
+
+<div class="ops-card">
+<div class="ops-head"><span class="dot">●</span>GLOBAL CYBER THREAT VISUALIZER</div>
+<iframe class="frame cyber" src="https://cybermap.kaspersky.com/en/widget/dynamic/dark" loading="lazy"></iframe>
+<div class="ops-foot"><a class="link" href="https://cybermap.kaspersky.com/" target="_blank">↗ Full Map</a></div>
+</div>
+
+<!-- FLIGHT TRACKER -->
+
+<div class="ops-card">
+<div class="ops-head"><span class="dot">●</span>LIVE FLIGHT TRACKER</div>
+<iframe class="frame flight" src="https://globe.adsbexchange.com/" loading="lazy"></iframe>
+<div class="ops-foot"><a class="link" href="https://globe.adsbexchange.com/" target="_blank">↗ Open Flight Tracker</a></div>
+</div>
+
+<!-- EARTHQUAKE -->
+
+<div class="ops-card">
+<div class="ops-head"><span class="dot">●</span>LIVE EARTHQUAKE MONITOR</div>
+<div class="ops-body">
+<p class="small" id="quakeUpdate">Connecting to USGS...</p>
+<div id="quakeList" style="margin-top:18px">Loading data...</div>
+</div>
+<div class="ops-foot"><a class="link" href="https://earthquake.usgs.gov/earthquakes/map/" target="_blank">↗ Open USGS Map</a></div>
+</div>
+
+<!-- WEATHER -->
+
+<div class="ops-card">
+<div class="ops-head"><span class="dot">●</span>LIVE WEATHER & RADAR</div>
+<iframe class="frame weather" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=5&overlay=radar&product=radar&level=surface&lat=4.21&lon=101.97" loading="lazy"></iframe>
+<div class="ops-foot"><a class="link" href="https://www.windy.com/" target="_blank">↗ Open Weather Radar</a></div>
+</div>
+
+<!-- ISS -->
+
+<div class="ops-card">
+<div class="ops-head"><span class="dot">●</span>INTERNATIONAL SPACE STATION TRACKER</div>
+<div class="ops-body">
+<div class="big" id="issStatus">CONNECTING</div>
+<p class="small" id="issTime">Waiting for satellite data...</p>
+<div class="data">
+<h3>LATITUDE</h3>
+<div class="big" id="issLat">--</div>
+</div>
+<div class="data">
+<h3>LONGITUDE</h3>
+<div class="big" id="issLon">--</div>
+</div>
+<div class="data">
+<h3>ALTITUDE</h3>
+<div class="big" id="issAlt">--</div>
+<p class="small">Kilometres above Earth</p>
+</div>
+<div class="data">
+<h3>VELOCITY</h3>
+<div class="big" id="issSpeed">--</div>
+<p class="small">Kilometres per hour</p>
+</div>
+<a id="issMap" class="link" href="https://www.openstreetmap.org/" target="_blank">↗ View ISS Position on Map</a>
+</div>
+</div>
+
+<!-- SPACE WEATHER -->
+
+<div class="ops-card">
+<div class="ops-head"><span class="dot">●</span>LIVE SPACE WEATHER MONITOR</div>
+<div class="ops-body">
+<p class="small">NOAA PLANETARY K-INDEX</p>
+<div class="big" id="kpValue">CONNECTING</div>
+<p class="small" id="kpTime">Waiting for NOAA data...</p>
+<div class="data" style="margin-top:20px">
+<h3>GEOMAGNETIC ACTIVITY</h3>
+<p id="kpDescription">Loading...</p>
+</div>
+</div>
+<div class="ops-foot"><a class="link" href="https://www.swpc.noaa.gov/" target="_blank">↗ NOAA Space Weather</a></div>
+</div>
+
+</div>
+
+<footer>
+<strong>4keiyy</strong>
+<p>Cyber Intelligence • Digital Awareness</p>
+<p>© 2026 4keiyy. All Rights Reserved.</p>
+</footer>
+
+<script>
+
+/* MATRIX RAIN */
+
+const canvas=document.getElementById("matrix");
+const ctx=canvas.getContext("2d");
+let width,height,drops=[],columns=0;
+
+function resize(){
+const dpr=Math.min(devicePixelRatio||1,2);
+width=innerWidth;
+height=innerHeight;
+canvas.width=width*dpr;
+canvas.height=height*dpr;
+canvas.style.width=width+"px";
+canvas.style.height=height+"px";
+ctx.setTransform(dpr,0,0,dpr,0,0);
+columns=Math.floor(width/17);
+drops=Array(columns).fill(1);
+}
+resize();
+addEventListener("resize",resize);
+
+const chars="01アイウエオカキクケコサシスセソABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+function matrix(){
+ctx.fillStyle="rgba(8,6,7,.09)";
+ctx.fillRect(0,0,width,height);
+ctx.fillStyle="#00ff66";
+ctx.font="14px monospace";
+for(let i=0;i<drops.length;i++){
+const char=chars[Math.floor(Math.random()*chars.length)];
+ctx.fillText(char,i*17,drops[i]*17);
+if(drops[i]*17>height&&Math.random()>.975)drops[i]=0;
+drops[i]++;
+}
+}
+setInterval(matrix,55);
+
+/* EARTHQUAKE DATA */
+
+async function loadQuakes(){
+const list=document.getElementById("quakeList");
+try{
+const response=await fetch("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson");
+if(!response.ok)throw Error("USGS unavailable");
+const data=await response.json();
+list.innerHTML="";
+
+data.features.slice(0,8).forEach(item=>{
+const p=item.properties;
+const card=document.createElement("div");
+card.className="data";
+
+const title=document.createElement("h3");
+title.textContent=`M ${p.mag??"N/A"} | ${p.place??"Unknown location"}`;
+
+const date=document.createElement("p");
+date.textContent=new Date(p.time).toLocaleString("en-MY",{timeZone:"Asia/Kuala_Lumpur"})+" MYT";
+
+card.append(title,date);
+list.appendChild(card);
+});
+
+if(!data.features.length)list.textContent="No events in this feed.";
+
+document.getElementById("quakeUpdate").textContent=
+"USGS FEED • Updated "+new Date().toLocaleTimeString();
+
+}catch(e){
+list.textContent="Unable to load USGS data. Try again later.";
+}
+}
+loadQuakes();
+setInterval(loadQuakes,60000);
+
+/* ISS LIVE POSITION */
+
+async function loadISS(){
+try{
+const response=await fetch("https://api.wheretheiss.at/v1/satellites/25544");
+if(!response.ok)throw Error("ISS unavailable");
+const data=await response.json();
+
+document.getElementById("issStatus").textContent="● LIVE";
+document.getElementById("issLat").textContent=Number(data.latitude).toFixed(4)+"°";
+document.getElementById("issLon").textContent=Number(data.longitude).toFixed(4)+"°";
+document.getElementById("issAlt").textContent=Number(data.altitude).toFixed(2)+" km";
+document.getElementById("issSpeed").textContent=Math.round(data.velocity).toLocaleString()+" km/h";
+
+document.getElementById("issTime").textContent=
+"Updated "+new Date(data.timestamp*1000).toLocaleTimeString();
+
+document.getElementById("issMap").href=
+"https://www.openstreetmap.org/?mlat="+data.latitude+"&mlon="+data.longitude+"#map=3/"+data.latitude+"/"+data.longitude;
+
+}catch(e){
+document.getElementById("issStatus").textContent="DATA UNAVAILABLE";
+document.getElementById("issTime").textContent="Please try again later.";
+}
+}
+loadISS();
+setInterval(loadISS,10000);
+
+/* NOAA SPACE WEATHER */
+
+async function loadSpaceWeather(){
+try{
+const response=await fetch("https://services.swpc.noaa.gov/json/planetary_k_index_1m.json");
+if(!response.ok)throw Error("NOAA unavailable");
+const data=await response.json();
+
+const latest=data[data.length-1];
+const kp=Number(latest.kp??latest.estimated_kp);
+
+if(!Number.isFinite(kp))throw Error("Invalid Kp data");
+
+document.getElementById("kpValue").textContent=kp.toFixed(2);
+document.getElementById("kpTime").textContent=
+"NOAA DATA • "+latest.time_tag;
+
+let description="Quiet geomagnetic conditions";
+if(kp>=5)description="Geomagnetic storm conditions";
+else if(kp>=4)description="Unsettled geomagnetic activity";
+else if(kp>=3)description="Slight geomagnetic activity";
+
+document.getElementById("kpDescription").textContent=description;
+
+}catch(e){
+document.getElementById("kpValue").textContent="UNAVAILABLE";
+document.getElementById("kpTime").textContent="NOAA feed could not be loaded.";
+}
+}
+loadSpaceWeather();
+setInterval(loadSpaceWeather,60000);
+
+</script>
+
+</body>
+</html>
